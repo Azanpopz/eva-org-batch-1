@@ -1,3 +1,21 @@
+
+## Deploy
+You can deploy this bot anywhere.
+
+<i>**[Watch Deploying Tutorial...](https://youtu.be/1G1XwEOnxxo)**</i>
+
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/Azanpopz/eva-org-batch-1/tree/master">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
+
+
+
+
 <p align="center">
   <img src="assets/logo.jpg" alt="Eva Maria Logo">
 </p>
