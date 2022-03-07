@@ -162,6 +162,24 @@ async def start(client, message):
         return
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("Please 😌😌wait")
+        sts = await client.send_cached_media(
+        chat_id=message.from_user.id,
+        file_id=file_id,
+        caption=f_caption,
+        parse_mode="html",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    '🎭 ⭕️ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ⭕️', url=f'https://t.me/mazhatthullikal'
+                                )
+                            ]
+                        ]
+                    )
+                )
+
+
+
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
