@@ -243,8 +243,7 @@ async def start(client, message):
                 except Exception as e:
                     logger.exception(e)
                     continue
-            await asyncio.sleep(1) 
-        return await sts.delete()
+            
         
 
     files_ = await get_file_details(file_id)           
