@@ -164,7 +164,19 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
+                    parse_mode="html",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    '🎭 ⭕️ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ⭕️', url=f'https://t.me/mazhatthullikal'
+                                )
+                            ]
+                        ]
                     )
+                )
+
+
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
