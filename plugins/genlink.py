@@ -146,5 +146,5 @@ async def gen_link_batch(bot, message):
         parse_mode="html"
                 
         )
-    await sts.reply(f"<b><a href='https://t.me/NasraniChatGroup'>Thank For Using Me...</a></b>")
+    await sts.edit(f"<b><a href='https://t.me/NasraniChatGroup'>Thank For Using Me...</a></b>")
     
