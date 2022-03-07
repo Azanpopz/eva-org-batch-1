@@ -124,27 +124,19 @@ async def gen_link_batch(bot, message):
     file_id, ref = unpack_new_file_id(post.document.file_id)
     await sts.edit(f"Here is your link\nContains `{og_msg}` files.\n https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
    
-    buttons = [
-                    [
-                        InlineKeyboardButton('💌 SUBSCRIBE ✅', url=f"https://t.me/{temp.U_NAME}?start={file_id}")
-                    ],
-                    [
-                        InlineKeyboardButton('💌 SUBSCRIBE ✅', url='https://t.me/bigmoviesworld'),
-                        InlineKeyboardButton('💌 SUBSCRIBE ✅', url='https://t.me/bigmoviesworld')
-                    ],
-                    [
-                        InlineKeyboardButton('💌 SUBSCRIBE ✅', url='https://t.me/bigmoviesworld'),
-                        InlineKeyboardButton('💌 SUBSCRIBE ✅', url='https://t.me/bigmoviesworld')
-                  
-                    ]
-                    ]
     await client.send_cached_media(
-        chat_id=message.from_user.id,
-        file_id=file_id,
-        caption=f_caption,
-        reply_markup=InlineKeyboardMarkup(buttons),
-        parse_mode="html"
-                
-        )
-    await sts.edit(f"<b><a href='https://t.me/NasraniChatGroup'>Thank For Using Me...</a></b>")
-    
+                    chat_id=message.from_user.id,
+                    file_id=file.file_id,
+                    caption=caption,
+                    parse_mode="html",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    '🎭 ⭕️ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ⭕️', url=f'https://t.me/mazhatthullikal'
+                                )
+                            ]
+                        ]
+                    )
+                )
+                         
