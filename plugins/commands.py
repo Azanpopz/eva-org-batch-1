@@ -184,7 +184,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await msg.reply_video(
+        sts = await message.reply_video(
         video= "https://telegra.ph/file/ec5404d035924f1113d8d.mp4",
         caption=f"<b>📍Hello:-നിങ്ങൾ ചോദിച്ച മൂവി വേണമെങ്കിൽ മുകളിലെ വീഡിയോ കണ്ട് അത് പോലെ സ്പെല്ലിങ് തെറ്റാതെ അയക്കുക.😌</b>",
         parse_mode="html",
