@@ -138,7 +138,7 @@ async def gen_link_batch(bot, message):
                   
                     ]
                     ]
-    k = await client.send_cached_media(
+        await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
