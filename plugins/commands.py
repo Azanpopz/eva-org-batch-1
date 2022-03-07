@@ -164,7 +164,7 @@ async def start(client, message):
         sts = await message.reply("Please 😌😌wait")
         sts = await client.send_cached_media(
         chat_id=message.from_user.id,
-        file_id=file_id,
+        
         
         parse_mode="html",
                     reply_markup=InlineKeyboardMarkup(
