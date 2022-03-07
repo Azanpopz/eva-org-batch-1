@@ -141,6 +141,17 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
+                    parse_mode="html",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    '🎭 ⭕️ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ⭕️', url=f'https://t.me/mazhatthullikal'
+                                )
+                            ]
+                        ]
+                    )
+                )
                     )
                 await message.reply(f"<b><a href='https://t.me/NasraniChatGroup'>Thank For Using Me...</a></b>")
    
@@ -162,23 +173,7 @@ async def start(client, message):
         return
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("Please 😌😌wait")
-        sts = await client.send_cached_media(
-        chat_id=message.from_user.id,
-        file_id=msg.get("file_id"),
-        caption=f_caption,
         
-        parse_mode="html",
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton(
-                                    '🎭 ⭕️ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ⭕️', url=f'https://t.me/mazhatthullikal'
-                                )
-                            ]
-                        ]
-                    )
-                )
-
 
 
         b_string = data.split("-", 1)[1]
