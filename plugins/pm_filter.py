@@ -791,7 +791,7 @@ async def advantage_spell_chok(msg):
         await k.delete()
         return
     elif query.data == "about":
-    SPELL_CHECK[msg.message_id] = movielist
+        SPELL_CHECK[msg.message_id] = movielist
     btn = [[
                 InlineKeyboardButton(
                     text=movie.strip(),
