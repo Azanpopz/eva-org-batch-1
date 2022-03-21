@@ -45,7 +45,7 @@ async def start(client, message):
             InlineKeyboardButton('📂 Our Channel', url='https://t.me/SS_Linkz')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton("okwe", "alert")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
