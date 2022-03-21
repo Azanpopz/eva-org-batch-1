@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
     elif query.data == "about":
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ok🥰🥰", "alert")]])
-    return await query.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
+        await query.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
