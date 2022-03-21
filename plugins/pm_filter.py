@@ -837,4 +837,4 @@ async def manual_filters(client, message, text=False):
 
 @client.on_callback_query(filters.regex("alert"))
 async def alert(client, query):
-await query.answer("texക്വക്വകt", show_alert=True)
+    await query.answer("texക്വക്വകt", show_alert=True)
