@@ -29,7 +29,7 @@ async def start(client, message):
 
 @client.on_callback_query(filters.regex("alert"))
 async def alert(client, query):
-await query.answer("ഓക്കേ", show_altert=True)
+    await query.answer("ഓക്കേ", show_altert=True)
 
 
 
