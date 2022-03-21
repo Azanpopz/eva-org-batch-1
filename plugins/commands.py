@@ -18,21 +18,15 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
+@Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
-       
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ഓക്കേ", "alert")]])
-
-
-
-
-@client.on_callback_query(filters.regex("alert"))
-async def alert(client, query):
-    await query.answer("ഓക്കേ", show_altert=True)
-
-
-
+        buttons = [            
+            [
+                InlineKeyboardButton('🕵️MENU🕵️', url=f"https://t.me/{temp.U_NAME}?start=menu"),
+            ]
+            ]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
