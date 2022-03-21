@@ -22,7 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
        
-reply_markup=InlineKeyboardMatkup([[InlineKeyboardButton("ഓക്കേ", "alert")]])
+    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ഓക്കേ", "alert")]])
 
 
 
