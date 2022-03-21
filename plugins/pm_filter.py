@@ -436,11 +436,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "about_ex":
+    elif query.data == "Tex😂😂t_ex":
         await update.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
     elif query.data == "abouut":
         buttons = [[
-            InlineKeyboardButton('🎥 Movie Group', url='https://t.me/nasrani_update'),
+            InlineKeyboardButton("Tex😂😂t", "alert"),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
