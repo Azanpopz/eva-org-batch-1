@@ -805,11 +805,10 @@ async def advantage_spell_chok(msg):
             ],
         )
    
-    await query.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
-             
+     
     
-    k = await msg.reply_sticker(
-        sticker= "CAACAgUAAxkBAAJXA2GiaMWYAAEvGr39FQLCuU_qW4rH1AACHwADhq-BGkoDm80BdFrWIgQ",
+    k = await query.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
+           
         reply_markup=InlineKeyboardMarkup(btn))
     return k
 
