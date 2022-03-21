@@ -27,15 +27,6 @@ async def start(client, message):
 
 
 
-buttons = [
-            [
-                InlineKeyboardButton('Movies Group 🎥', url='https://t.me/NetflixMovoes_sslinkz')
-            ],
-            [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            ]
-            ]
-        reply_markup = InlineKeyboardMarkup(buttons)
 
 elif update.data == "song_ex":
         await update.answer("\n\n♻️𝐇𝐞𝐲𝐚 𝐚𝐥𝐥 𝐚𝐫𝐞 𝐬𝐢𝐦𝐩𝐥𝐞 𝐭𝐨 𝐮𝐬𝐞 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐫𝐞 𝐦𝐞𝐧𝐭𝐢𝐨𝐧𝐞𝐝 𝐚𝐛𝐨𝐯𝐞.♻️ ", show_alert=True)
